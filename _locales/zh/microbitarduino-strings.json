@@ -1,0 +1,11 @@
+{
+    "microbitarduino|block": "控制arduino",
+    "microbitarduino.setpinmode|block": "設定arduino數位腳位 %pin|為 %XY",
+    "microbitarduino.setdigital|block": "arduino數位腳位 %pin|的值為 %XY",
+    "microbitarduino.setpinmode1|block": "設定arduino數位腳位 %pin|為 %XY",
+    "microbitarduino.setdigital1|block": "arduino數位腳位 %pin|的值為 %XY",
+    "microbitarduino.setdigital2|block": "arduino數位腳位 %pin|的PWM輸出值為 %XY",
+    "microbitarduino.setdigital3|block": "讀取arduino數位腳位 %pin 的值",
+    "microbitarduino.setdigital4|block": "讀取arduino類比腳位 %pin 的值",
+    "microbitarduino.setMicrobit|block": "設定Microbit |TX %tx|RX %rx|baudrate %baudrate"
+}
