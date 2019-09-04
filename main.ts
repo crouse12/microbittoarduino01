@@ -101,7 +101,7 @@ namespace microbitarduino {
         serial.writeLine("rfidid="+"\\n")
         basic.pause(10)
         let a=serial.readString()
-        a=a.replace(/\n/g, "")
+        a=a.replace("\\n", "")
         return a
     } 
       
