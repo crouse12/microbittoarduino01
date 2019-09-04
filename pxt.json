@@ -1,0 +1,15 @@
+{
+    "name": "microbitarduino",
+    "version": "0.1",
+    "description": "這是micro:bit的arduino控制積木",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/microbitarduino-strings.json"
+    ],
+    "public": true
+}
