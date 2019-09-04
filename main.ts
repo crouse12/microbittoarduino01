@@ -100,7 +100,8 @@ namespace microbitarduino {
     export function rfidid():string {
         serial.writeLine("rfidid="+"\\n")
         basic.pause(10)
-        let a=serial.readLine()
+        let a=serial.readString()
+        a=a.replace(/\n/g, "")
         return a
     } 
       
