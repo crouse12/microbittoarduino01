@@ -96,9 +96,9 @@ namespace microbitarduino {
       
       
     //% blockId=rfidid block="read arduino rfid id"
-    //% weight=101 advance=True
+    //% weight=101 advanced=true
     export function rfidid():string {
-        serial.writeLine("rfidid="+\\n")
+        serial.writeLine("rfidid="+"\\n")
         basic.pause(10)
         let a=serial.readString()
         return a
