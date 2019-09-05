@@ -83,6 +83,7 @@ namespace microbitarduino {
         serial.writeLine("digitalRead="+pin.toString()+"\\n")
         basic.pause(10)
         let a=serial.readString()
+        a=a.substr(0, a.length - 2)
         return a;
     }
     //% blockId=setdigital4 block="read arduino analog pin  %pin value"
@@ -91,6 +92,7 @@ namespace microbitarduino {
         serial.writeLine("analogRead="+pin.toString()+"\\n")
         basic.pause(10)
         let a=serial.readString()
+        a=a.substr(0, a.length - 2)
         return a
     }   
       
