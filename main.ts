@@ -79,21 +79,21 @@ namespace microbitarduino {
  
     //% blockId=setdigital3 block="read arduino digital pin  %pin value"
     //% weight=101
-    export function setdigital3(pin: digitalpin):string {
+    export function setdigital3(pin: digitalpin):number {
         serial.writeLine("digitalRead="+pin.toString()+"\\n")
         basic.pause(10)
         let a=serial.readString()
         a=a.substr(0, a.length - 2)
-        return a;
+        return parseFloat(a);
     }
     //% blockId=setdigital4 block="read arduino analog pin  %pin value"
     //% weight=101 
-    export function setdigital4(pin: analogpin):string {
+    export function setdigital4(pin: analogpin):number {
         serial.writeLine("analogRead="+pin.toString()+"\\n")
         basic.pause(10)
         let a=serial.readString()
         a=a.substr(0, a.length - 2)
-        return a
+        return parseFloat(a)
     }   
       
       
